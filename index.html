@@ -7,21 +7,32 @@
     <title>Resoft</title>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
     <!-- css 파일 연결 -->
-    <link rel="stylesheet" href="reset.css">
-    <link rel="stylesheet" href="style.css">
-    <!-- 스크립트 파일 연결 -->
-    <script src="https://code.jquery.com/jquery-latest.js"></script> 
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <!-- 슬릭슬라이더 연결-->
+    <script  type="text/javascript" src="./script.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <!-- js 파일 연결 -->
     <script src="./script.js"></script>
-    <!-- 폰트 링크 -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <!-- google font -->
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="header-bg"><div class="bg-color"></div></div>
+        <div class="header-bg">
+            <div class="bg-color">
+                <!-- 헤더 텍스트 -->
+                <div class="header-text-wrap">
+                    <div class="header-text-b">Evolution<br> With New Software</div>
+                    <div class="header-text-s">Mobil APP(Android/iOS) Development, AI Bigdata Analysis, MetaVerse, Responsive WEBsite, Brand Design Launch, ICT Consulting</div>
+                </div>
+            </div>
+        </div>
         <!-- 네비게이션바 -->
-        <nav class="nav-gnb">
+        <nav class="nav-gnb" id="nav-change-css">
             <!-- 로고 -->
             <a href="./index.html">
                 <img class="home-logo" src="./img/toco-common/logo-Resoft-white.png" alt="resoft_logo">
@@ -71,11 +82,6 @@
             </div>
         </nav>
         
-        <!-- 헤더 텍스트 -->
-        <div class="header-text-wrap">
-            <div class="header-text-b">Evolution<br> With New Software</div>
-            <div class="header-text-s">Mobil APP(Android/iOS) Development, AI Bigdata Analysis, MetaVerse, Responsive WEBsite, Brand Design Launch, ICT Consulting</div>
-        </div>
     </header>
     <!-- 푸터 제민님 -->
     <footer class="footer">
