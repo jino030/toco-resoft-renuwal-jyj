@@ -8,9 +8,6 @@
 // script.js:6 Uncaught TypeError: $(...).slick is not a function
 $.noConflict();
 
-
-
-
 // 슬릭슬라이더
 $(function(){
     $(".etc-projects").slick({

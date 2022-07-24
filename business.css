@@ -27,7 +27,7 @@ input[id="menuicon"] + label span{
 .header-title-bg {
     width: 100%;
     height: 300px;
-    background: url(img/toco-img3/business-header.png) center center no-repeat, rgba(0, 0, 0, 0.5);
+    background: url(./img/toco-img3/business-header.png) center center no-repeat, rgba(0, 0, 0, 0.5);
     background-size: cover;
     background-blend-mode:hard-light;
     margin-top: 80px;
@@ -83,7 +83,7 @@ input[id="menuicon"] + label span{
 }
 .ecoce-left .ecoce-left-bottom{
     margin-top: 54px;
-    background: url(img/toco-img3/business-ECOCE-screen2.png) no-repeat;
+    background: url(./img/toco-img3/business-ECOCE-screen2.png) no-repeat;
     background-size:90%;
 }
 .ecoce-left .ecoce-left-bottom img{
