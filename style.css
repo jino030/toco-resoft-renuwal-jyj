@@ -271,7 +271,7 @@ header .header-text-s{
 @media screen and (max-width:768px) {
     .menu{display: none;}
     .nav-lnb .lnb-menu .mobile-menu .mobile-menuTitle {
-        display: inline-block; width: 66.24px; font-size: 18px; font-weight: 700; margin-bottom: 5px; padding-bottom: 8px; color: #fff; border-bottom: 2px solid #E9E9E9;
+        display: inline-block; width: 67px; text-align: center; font-size: 18px; font-weight: 700; margin-bottom: 5px; padding-bottom: 8px; color: #fff; border-bottom: 2px solid #E9E9E9;
     }
     .nav-lnb .lnb-menu .mobile-menu{margin-left: 10px;}
     .nav-lnb .lnb-menu .mobile-menu li{margin-top: 13px;}
