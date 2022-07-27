@@ -10,13 +10,10 @@
     <link rel="stylesheet" href="./reset.css">
     <link rel="stylesheet" href="./style.css">
     <!-- 슬릭슬라이더 연결-->
-    <script  type="text/javascript" src="./script.js"></script>
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="https://code.jquery.com/jquery-latest.js"></script>
-    <!-- js 파일 연결 -->
-    <script src="./script.js"></script>
     <!-- google font -->
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
 </head>
@@ -32,34 +29,31 @@
             </div>
         </div>
         <!-- 네비게이션바 -->
-        <nav class="nav-gnb" id="nav-change-css">
+        <nav class="nav-gnb">
             <!-- 로고 -->
             <a href="./index.html">
-                <img class="home-logo" src="./img/toco-common/logo-Resoft-white.png" alt="resoft_logo">
+                <img id="home-logo" src="./img/toco-common/logo-Resoft-white.png" alt="resoft_logo">
             </a>
 
             <!-- 메뉴 -->
             <div class="menu">
                 <span class="menu-wrap">
-                    <a href="#">회사소개</a>
-                    <span class="menu-underline"></span>
+                    <a class="menu-text" href="#">회사소개</a>
                 </span>
                 <span class="menu-wrap">
-                    <a href="./business.html">사업현황</a>
-                    <span class="menu-underline"></span>
+                    <a class="menu-text" href="./business.html">사업현황</a>
                 </span>
                 <span class="menu-wrap">
-                    <a href="#">정보마당</a>
-                    <span class="menu-underline"></span>
+                    <a class="menu-text" href="#">정보마당</a>
                 </span>
             </div>
 
             <!-- 메뉴더보기 -->
             <input type="checkbox" id="menuicon">
             <label for="menuicon">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span class="menuicon-color"></span>
+                <span class="menuicon-color"></span>
+                <span class="menuicon-color"></span>
             </label>
             <div class="nav-lnb">
                 <div class="lnb-menu">
@@ -73,9 +67,9 @@
                     </ul>
                     <ul class="business-status mobile-menu">
                         <li class="mobile-menuTitle">사업현황</li>
-                        <li><a href="#content-ecoce">ECOCE</a></li>
-                        <li><a href="#content-moado">moaDo</a></li>
-                        <li><a href="#content-etc">Etc</a></li>
+                        <li><a href="./business.html#content-ecoce">ECOCE</a></li>
+                        <li><a href="./business.html#content-moado">moaDo</a></li>
+                        <li><a href="./business.html#content-etc">Etc</a></li>
                     </ul>
                     <ul class="information-yard mobile-menu">
                         <li class="mobile-menuTitle">정보마당</li>
@@ -84,8 +78,8 @@
                 </div>
             </div>
         </nav>
-        
     </header>
+    
     <!-- 푸터 제민님 -->
     <footer class="footer">
         <div class="footer-wrap">
@@ -108,5 +102,7 @@
     </footer>       
   
 </body>
+<!-- js 파일 연결 -->
+<script src="./script.js"></script>
 
 </html>

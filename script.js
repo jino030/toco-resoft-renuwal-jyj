@@ -1,20 +1,10 @@
-// 토글(메뉴더보기) 클릭 이벤트
-// const toggle = document.getElementById('toggle');
-// toggle.onclick = function(){
-//     toggle.classList.toggle('active');
-// }
-
-// 제이쿼리 충돌 오류 방지 
-// script.js:6 Uncaught TypeError: $(...).slick is not a function
-$.noConflict();
-
 // 슬릭슬라이더
 $(function(){
     $(".etc-projects").slick({
         slide: "div",                   // 슬라이드 되어야 할 태그
         infinite : true,                // 무한 반복 옵션     
         slidesToShow : 5,               // 한 화면에 보여질 컨텐츠 개수
-        slidesToScroll : 1,             //스크롤 한번에 움직일 컨텐츠 개수
+        slidesToScroll : 1,             // 스크롤 한번에 움직일 컨텐츠 개수
         speed : 400,                    // 다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
         arrows : true,                  // 옆으로 이동하는 화살표 표시 여부
         dots : false,                   // 스크롤바 아래 점으로 페이지네이션 여부
@@ -43,3 +33,23 @@ $(function(){
         ]
     });
 })
+
+$('#menuicon').on('click', function() {
+    if ( $(this).prop('checked') ) {
+        $(".nav-gnb").css('background-color','#fff');
+        $(".nav-gnb").css('border-bottom','1px solid #000');
+        $(".nav-gnb").css('transition','all .45s');
+        $(".menu-text").css('color',"#000");
+        $(".menuicon").css('background-color',"#000");
+        $(".menuicon-color").css('background-color',"#000");
+        document.getElementById("home-logo").src="./img/toco-common/logo-Resoft.svg";
+    } else {
+        $(".nav-gnb").css('background-color','');
+        $(".nav-gnb").css('border-bottom','');
+        $(".nav-gnb").css('transition','');
+        $(".menu-text").css('color',"#fff");
+        $(".menuicon").css('background-color',"#fff");
+        $(".menuicon-color").css('background-color',"#fff");
+        document.getElementById("home-logo").src="./img/toco-common/logo-Resoft-white.png";
+    }
+  });
