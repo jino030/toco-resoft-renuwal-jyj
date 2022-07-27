@@ -33,7 +33,7 @@
     top: 0;
     /* box-shadow: 0 4px 4px -4px black; */
 }
-.nav-gnb #home-logo{
+.nav-gnb #main-logo{
     width: 133px;
     height: 30px;
     position: absolute;
@@ -66,6 +66,7 @@
 }
 .nav-gnb .menu .menu-wrap a:hover{
     color: #184B9F;
+    transition: all .35s ease-in-out;
 }
 .nav-gnb .menu .menu-wrap:nth-child(2){
     margin: 0 56px;
@@ -131,6 +132,7 @@ input[id="menuicon"]:checked + label + div{
     position: absolute;
     top: 80px;
     opacity: 0.9;
+    box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.2);
 }
 
 /* ----- 더보기 메뉴 효과 ----- */

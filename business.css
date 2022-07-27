@@ -5,7 +5,7 @@
     z-index: 100;
     border: 1px solid #DBDBDB;
 }
-.nav-gnb #business-home-logo{
+.nav-gnb #business-main-logo{
     width: 133px;
     height: 30px;
     position: absolute;
@@ -355,8 +355,6 @@ input[id="menuicon"] + label span{
 .footer-left,.footer-right{
     line-height:25px;
 }
-
-
 
 
 

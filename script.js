@@ -1,4 +1,39 @@
-// 슬릭슬라이더
+
+// 메인페이지 메뉴더보기 클릭시 디자인 변경
+$('#menuicon').on('click', function() {
+    if ( $(this).prop('checked') ) {
+        // 메뉴더보기 열릴 때
+        $(".nav-gnb").css('background-color','#fff');
+        $(".nav-gnb").css('border-bottom','1px solid #000');
+        $(".nav-gnb").css('transition','all .45s');
+        $(".menu-text").css('color',"#000");
+        $(".menuicon").css('background-color',"#000");
+        $(".menuicon-color").css('background-color',"#000");
+        document.getElementById("main-logo").src="./img/toco-common/logo-Resoft.svg";
+        $('.menu-text').hover(function(){
+            $(this).css('color','#184B9F');
+        }, function(){
+            $(this).css('color','#000');
+        });
+    } else {
+        // 메뉴더보기 닫힌 후
+        $(".nav-gnb").css('background-color','');
+        $(".nav-gnb").css('border-bottom','');
+        $(".nav-gnb").css('transition','');
+        $(".menu-text").css('color',"#fff");
+        $(".menuicon").css('background-color',"#fff");
+        $(".menuicon-color").css('background-color',"#fff");
+        document.getElementById("main-logo").src="./img/toco-common/logo-Resoft-white.png";
+        $('.menu-text').hover(function(){
+            $(this).css('color','#184B9F');
+        }, function(){
+            $(this).css('color','#fff');
+        });
+    }
+  });
+
+
+// 사업현황페이지 슬릭슬라이더
 $(function(){
     $(".etc-projects").slick({
         slide: "div",                   // 슬라이드 되어야 할 태그
@@ -34,22 +69,3 @@ $(function(){
     });
 })
 
-$('#menuicon').on('click', function() {
-    if ( $(this).prop('checked') ) {
-        $(".nav-gnb").css('background-color','#fff');
-        $(".nav-gnb").css('border-bottom','1px solid #000');
-        $(".nav-gnb").css('transition','all .45s');
-        $(".menu-text").css('color',"#000");
-        $(".menuicon").css('background-color',"#000");
-        $(".menuicon-color").css('background-color',"#000");
-        document.getElementById("home-logo").src="./img/toco-common/logo-Resoft.svg";
-    } else {
-        $(".nav-gnb").css('background-color','');
-        $(".nav-gnb").css('border-bottom','');
-        $(".nav-gnb").css('transition','');
-        $(".menu-text").css('color',"#fff");
-        $(".menuicon").css('background-color',"#fff");
-        $(".menuicon-color").css('background-color',"#fff");
-        document.getElementById("home-logo").src="./img/toco-common/logo-Resoft-white.png";
-    }
-  });
