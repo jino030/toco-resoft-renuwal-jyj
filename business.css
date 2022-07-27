@@ -5,6 +5,13 @@
     z-index: 100;
     border: 1px solid #DBDBDB;
 }
+.nav-gnb #business-home-logo{
+    width: 133px;
+    height: 30px;
+    position: absolute;
+    left: 12.5%;
+    top: 25px;
+}
 .nav-gnb .menu .menu-wrap .menu-underline:hover{
     position: absolute;
     display: inline-block;
